@@ -1,0 +1,15 @@
+// 字級規範
+$font-size: (
+    //map-get( $font-size , l);
+    xs: .85rem,
+    s: 1rem,
+    m:1.2rem,
+    l: 1.5rem,
+    xl: 2rem,
+    xxl:2.6rem
+);
+
+//字體規範
+$font-family-display: "Luckiest Guy", cursive;
+$font-family-title: Coffee, sans-serif;
+$font-family-tc: "Noto Sans HK", sans-serif;

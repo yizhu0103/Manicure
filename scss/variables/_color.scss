@@ -1,0 +1,27 @@
+$color: (//map-get( $color , dark)
+    // 灰階
+    dark-deep-font:#6E646E,
+    dark-deep-1:#837D7D,
+    dark-deep-2:#A8A4A4,
+    dark-deep-3:#DAD8D8,
+    dark-deep-title-font:#9C9797,
+    light: #F8F4F4,
+    light-font:#ffffff,
+
+    // 主色
+    primary-title-1: #F3A48C,
+    primary-title-2: #FF9A9E,
+    primary-3: #FAD0C4,
+    primary-4: #E6CDCD,
+
+
+    secondary-1: #BDE4DF,
+    secondary-2: #CEE5E2,
+    secondary-3: #7ECAC6,
+    secondary-4: #D7F0ED,
+    
+
+    // 透明
+    alpha-b-25: rgba(0, 0, 0, 0.25),
+
+);

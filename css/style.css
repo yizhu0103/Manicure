@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* 重置所有標籤的樣式 */
+* {
+  /* '*'代表全部所有東西 重製全部東西 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*  rwd一定要寫 不累加padding border*/
+  /* 不累加內容的padding */
+}
+
+/* 重置字體 */
+/* 字體會先抓前面的 */
+/* 英文字體不會設定中文字體 會直接往後找 font-family= '英文字體' '中文字體' */
+body {
+  font-family: sans-serif;
+  /* 定義字體 */
+  /* 無組件字體 無襯線字體sans-serif 襯線字體serif */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 重置連接 */
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner {
+  background: url(../images/Home-Banner.jpg);
+  opacity: 0.9;
+  background-size: cover;
+  position: relative;
+}
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  /* 半透明黑色濾鏡 */
+  z-index: 1;
+  /* 放在圖片上方 */
+}
+#banner .navbar {
+  height: 10vh;
+  z-index: 2;
+  padding: 33px 70px;
+}
+#banner .navbar .navbar-brand img {
+  height: 64px;
+}
+#banner .navbar .nav_boxlist {
+  align-items: center;
+  justify-content: end;
+}
+#banner .navbar .nav_boxlist .titel_list {
+  display: flex;
+  align-items: center;
+}
+#banner .navbar .nav_boxlist .titel_list li {
+  margin-left: 60px;
+}
+#banner .navbar .nav_boxlist .titel_list li a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: transparent solid;
+  transition: 0.4s ease-in-out;
+}
+#banner .navbar .nav_boxlist .titel_list li a:hover {
+  border-bottom: #ffffff solid;
+}
+#banner .navbar .nav_boxlist .icon_list {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+}
+#banner .navbar .nav_boxlist .icon_list li {
+  margin-left: 20px;
+}
+#banner .navbar .nav_boxlist .icon_list li a img {
+  height: 48px;
+}
+#banner .banner_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+#banner .banner_item img {
+  width: 45%;
+  z-index: 2;
+  object-fit: cover;
+  margin-top: 50px;
+}
+#banner .banner_item .reserve_btn {
+  z-index: 2;
+  border-radius: 99px;
+  color: #ffffff;
+  background: linear-gradient(to top, #FF9A9E, #FAD0C4);
+  margin-top: 5vh;
+  letter-spacing: 2px;
+  line-height: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 14px 36px;
+}
+
+#service {
+  background-color: #F8F4F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#service .ser_bg {
+  width: 25%;
+  position: absolute;
+}
+#service .serbg1 {
+  top: 0;
+  right: 5%;
+}
+#service .serbg2 {
+  top: 0;
+  left: 5%;
+}
+#service .flower1 {
+  position: absolute;
+  width: 20%;
+  left: -2%;
+  top: 20%;
+}
+#service .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#service .title .title_service {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-right: 100px;
+}
+#service .title .title_service h3 {
+  color: #F3A48C;
+  letter-spacing: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+#service .title .title_service img {
+  height: 70px;
+  width: 90px;
+  object-fit: cover;
+}
+#service .title .title_service_ch {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #9C9797;
+}
+#service .service_boxlist {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#service .service_boxlist .service_item {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#service .service_boxlist .service_item a {
+  width: 90%;
+  height: 100%;
+}
+#service .service_boxlist .service_item a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  border: #ffffff solid 18px;
+  object-fit: cover;
+}
+#service .service_boxlist .service_item a .serimg3 {
+  object-position: top 0 left 10px;
+}
+
+#about {
+  background-color: #F8F4F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
